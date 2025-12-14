@@ -94,14 +94,10 @@ El modelo obtiene un rendimiento significativamente superior en el dataset exter
 Ejecutar scripts de python localmente o abrir el cuaderno de Google Colab
 
 #### Local
-
-1. **Requisitos de Python:**
-   ```bash
-   pip install librosa numpy pandas kagglehub
-   ```
+Ver guía completa [aquí](https://github.com/Mininh1206/ssi-dataset-cc-extractor#guía-de-instalación-y-ejecución)
 
 #### Google Colab
-
+Abrir [este cuaderno](/src/Datasets_extractor.ipynb) en Colab
 
 ### **Ejecución de Orange:**
    * Instalar [Orange Data Mining](https://orangedatamining.com/).
