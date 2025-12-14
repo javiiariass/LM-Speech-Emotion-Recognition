@@ -47,7 +47,7 @@ El sistema se ha diseñado para clasificar audios en categorías emocionales **s
 ### 2.1. Arquitectura de Datos (Multi-Corpus)
 Para asegurar la robustez del sistema, no nos hemos limitado a un único dataset. Hemos estructurado los datos en tres niveles de validación:
 
-1.  **Dataset de Entrenamiento (ssi-speech-emotion-recognition):** Corpus principal ([`ssi_custom_features.csv`](/data/processed/ssi_custom_features.csv)) utilizado para el aprendizaje de los modelos. Dataset `stapesai/ssi-speech-emotion-recognition` disponible en el repositorio de [Hugging Face](https://huggingface.co/datasets/stapesai/ssi-speech-emotion-recognition).
+1.  **Dataset de Entrenamiento (ssi-speech-emotion-recognition):** Corpus principal ([`ssi_custom_features.xlsx`](/data/processed/ssi_custom_features.xlsx)) utilizado para el aprendizaje de los modelos. Dataset `stapesai/ssi-speech-emotion-recognition` disponible en el repositorio de [Hugging Face](https://huggingface.co/datasets/stapesai/ssi-speech-emotion-recognition).
 La elección de este conjunto de datos para entrenar el modelo se justifica por los siguientes factores:
     - **Consistencia y Accesibilidad:** Al utilizar un dataset curado y alojado en Hugging Face, se garantiza el acceso a datos estructurados y listos para su procesamiento, evitando inconsistencias de formato comunes en la recolección manual de archivos de audio.
     - **Calidad de Audio:** Este dataset proporciona grabaciones con una relación señal-ruido (SNR) adecuada, lo que facilita la extracción de características limpias (MFCCs, Chroma) sin la interferencia excesiva de ruido ambiental.
