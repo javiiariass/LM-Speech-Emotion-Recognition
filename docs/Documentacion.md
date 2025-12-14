@@ -106,14 +106,14 @@ Hemos implementado dos tuberías de procesamiento distintas (archivos `.ows`) pa
 Hemos configurado la red neuronal por defecto añadiendo 2 capas ocultas extra y configurando el número de neuronas en forma de embudo.
 
 - **Arquitectura:** 
-    - [200, 60, 30] neuronas.
+    - [400, 100, 50] neuronas.
 
 <img src="asssets/Estructura_RedNeuronal.png"   width="700"></br>
 - **Justificación del Diseño:**
 
-    - **Capa 1 (200 neuronas):** Una capa inicial ancha para capturar una gran variedad de combinaciones de bajo nivel de los 40 coeficientes MFCC de entrada.
+    - **Capa 1 (400 neuronas):** Una capa inicial ancha para capturar una gran variedad de combinaciones de bajo nivel de los 40 coeficientes MFCC de entrada.
 
-    - **Capa 2 (60 neuronas) y Capa 3 (30 neuronas):** Reducción progresiva de la dimensionalidad. Esta estructura obliga a la red a "comprimir" la información, sintetizando los patrones más relevantes y descartando el ruido acústico.
+    - **Capa 2 (100 neuronas) y Capa 3 (50 neuronas):** Reducción progresiva de la dimensionalidad. Esta estructura obliga a la red a "comprimir" la información, sintetizando los patrones más relevantes y descartando el ruido acústico.
 
 - **Función de Activación:** ReLu (Rectified Linear Unit), seleccionada por su eficiencia computacional y por mitigar el problema del desvanecimiento del gradiente en redes de varias capas.
 

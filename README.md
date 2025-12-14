@@ -19,22 +19,23 @@ LM-Speech-Emotion-Recognition/
 │   │   ├── ssi_custom_features.xlsx  # Dataset de Entrenamiento (Source)
 │   │   ├── testing_ravdess.csv      # Dataset de Control (RAVDESS)
 │   │   └── real_tests.xlsx           # Dataset Experimental (Voces propias)
-│
+│   └── models/                 # modelos guardados de los flujos orange
 ├── src/                       # Código fuente Python
 │   ├── training_extractor/    # Extractor para el dataset principal
 │   │   ├── main.py
 │   │   └── requirements.txt
 │   │
-│   └── testing_extractor/     # Extractor y descarga para RAVDESS
-│       └── RavdessKaggle.ipynb
+│   └── Datasets_extractor.ipynb  # Cuaderno colab para crear los 3 datasets necesarios
 │
 ├── orange_workflow/           # Flujos de Orange Data Mining (.ows)
-│   ├── experiment_grouped_3class.ows    # Estrategia de agrupación (3 emociones)
-│   ├── experiment_basic_4emotions.ows   # Estrategia de selección (4 emociones)
-│   └── diagrams/                        # Esquemas visuales del flujo
+│   ├── Practica3_3_Emociones_Agrupadas.ows    # Estrategia de agrupación (3 emociones)
+│   ├── Practica3_4_Emociones.ows   # Estrategia de selección (4 emociones)
+│   └── capturas/                        # Esquemas visuales del flujo
 │
 └── docs/                      # Documentación adicional y enunciados
-    └── assets/
+    ├── Documentacion.md       # Documentación en formato Markdown
+    ├── Documentacion.pdf         # Documentación en pdf
+    └── assets/                 # Archivos de apoyo para documentación
 ```
 
 ***
