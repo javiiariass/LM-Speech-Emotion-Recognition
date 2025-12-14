@@ -1,7 +1,7 @@
 # Memoria Técnica: Sistema de Detección de Emociones en Audio (SER)
 
-**Asignatura:** Procesamiento del habla, visión e interacción multimodal \
-> [!info]
+**Asignatura:** Procesamiento del habla, visión e interacción multimodal 
+> [!note]
 >**Autores:**
 >* Daniel Marchena Jiménez
 >* Javier Arias Fuentes
@@ -53,7 +53,7 @@ La elección de este conjunto de datos para entrenar el modelo se justifica por 
     - **Calidad de Audio:** Este dataset proporciona grabaciones con una relación señal-ruido (SNR) adecuada, lo que facilita la extracción de características limpias (MFCCs, Chroma) sin la interferencia excesiva de ruido ambiental.
     - **Etiquetado Fiable:** Las muestras contienen etiquetas emocionales claras, lo cual es ideal para el entrenamiento supervisado de modelos base, permitiendo al sistema aprender patrones acústicos prototípicos de cada emoción.
 
-2.  **Dataset de Control (RAVDESS):** Dataset [*Ryerson Audio-Visual Database of Emotional Speech and Song*](/data/processed/testing_ravdess.csv). Al ser grabaciones de actores profesionales en estudio anecoico, nos sirve como "[Ground Truth](https://www.ibm.com/es-es/think/topics/ground-truth)" de emociones arquetípicas. Dataset `RAVDESS` disponible en [Kaggle](https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio/)
+2.  **Dataset de Control (RAVDESS):** Dataset [*Ryerson Audio-Visual Database of Emotional Speech and Song*](/data/processed/testing_ravdess.csv). Al ser grabaciones de actores profesionales en estudio anecoico, nos sirve como ["Ground Truth"](https://www.ibm.com/es-es/think/topics/ground-truth) de emociones arquetípicas. Dataset `RAVDESS` disponible en [Kaggle](https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio/)
 3.  **Dataset Experimental (Voces Propias):** Grabaciones realizadas por el equipo para testear el sistema ante micrófonos no profesionales y ruido ambiente.
 
 ### 2.2. Extracción de Características
@@ -61,7 +61,7 @@ Se ha desarrollado un script en Python utilizando la librería `librosa`. Tras d
 | Parámetro | Detalle |
 | :--- | :--- |
 | Herramienta | Python + Librería `librosa` |
-| Repositorio | - [Corpus principal](stapesai/ssi-speech-emotion-recognition) </br> - [Dataset tests](/src/testing_extractor/RavdessKaggle.ipynb) |
+| Repositorio | - [Corpus principal](https://huggingface.co/datasets/stapesai/ssi-speech-emotion-recognition) </br> - [Dataset tests](https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio/) |
 | Decisión de diseño | Script externo para control total sobre ventana de análisis y parámetros matemáticos. El audio no estructurado se convierte a datos tabulares para ML. |
 
 #### Características Extraídas y Justificación

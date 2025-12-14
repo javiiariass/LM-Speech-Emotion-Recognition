@@ -16,9 +16,9 @@ LM-Speech-Emotion-Recognition/
 │
 ├── data/
 │   ├── processed/             # CSVs con características extraídas (MFCCs)
-│   │   ├── ssi_custom_features.csv  # Dataset de Entrenamiento (Source)
+│   │   ├── ssi_custom_features.xlsx  # Dataset de Entrenamiento (Source)
 │   │   ├── testing_ravdess.csv      # Dataset de Control (RAVDESS)
-│   │   └── real_tests.csv           # Dataset Experimental (Voces propias)
+│   │   └── real_tests.xlsx           # Dataset Experimental (Voces propias)
 │
 ├── src/                       # Código fuente Python
 │   ├── training_extractor/    # Extractor para el dataset principal
